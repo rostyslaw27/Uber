@@ -179,10 +179,6 @@
 		min-height: 450px
 	
 @media (max-width: 575px)
-	nav
-		height: 30px
-	header
-		height: 30px
 	.title 
 		font-size: 16px
 		margin-top: 15px
@@ -191,6 +187,25 @@
 		font-size: 14px
 		line-height: 21px
 		margin-top: 11px
+	nav
+		height: 30px
+	header
+		height: 30px
+	.menu
+		width: 85%
+		&_item 
+			width: 100%
+			text-align: center
+			padding: 5px 0
+		&_link
+			display: block
+	.hamburger
+		&_active 
+			span 
+				&:nth-child(1)
+					transform: translateY(5px) rotate(-45deg)
+				&:nth-child(3)
+					transform: translateY(5px) rotate(45deg)
 	.subheader
 		height: 60px
 		top: 30px
@@ -231,21 +246,6 @@
 			font-size: 16px
 			&:hover 
 				background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
-	.menu
-		width: 85%
-		&_item 
-			width: 100%
-			text-align: center
-			padding: 5px 0
-		&_link
-			display: block
-	.hamburger
-		&_active 
-			span 
-				&:nth-child(1)
-					transform: translateY(5px) rotate(-45deg)
-				&:nth-child(3)
-					transform: translateY(5px) rotate(45deg)
 	.reasons
 		padding: 22px 0 36px 0
 		&_block
